@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Bev Ads</title>
+  <meta name="description" content="Book a demo or partner with Bev Ads — the beverage-only advertising network for liquor retail. Get in touch with our team." />
+  <link rel="icon" href="assets/img/bevads-monogram.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="assets/img/bevads-logo-tight.png" alt="Bev Ads" class="brand-logo" /></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="for-advertisers.html">For Advertisers</a>
+        <a href="for-retailers.html">For Retailers</a>
+        <a href="contact.html" class="nav-demo active">Book a Demo</a>
+        <a href="https://login.bevads.com" class="nav-login" target="_blank" rel="noopener">Login</a>
+      </nav>
+      <div class="header-cta"><a href="https://login.bevads.com" class="btn btn-login" target="_blank" rel="noopener">Login</a><a href="contact.html" class="btn btn-primary">Book a Demo</a></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== Page hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's own the moment of choice</h1>
+      <p>Whether you're a beverage brand or a liquor retailer, tell us a little about you and we'll be in touch.</p>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h3>Get in touch</h3>
+        <p>Book a demo, request a media plan, or ask about bringing your store onto the network.</p>
+        <div class="ci-item"><span class="ci-ic">✉</span><span>info@bevads.com<small>We reply within one business day</small></span></div>
+        <div class="ci-item"><span class="ci-ic">◎</span><span>Beverages Only<small>The Beverage Advertising Network</small></span></div>
+      </div>
+
+      <form class="form" id="contactForm" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Brand or store" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required />
+          </div>
+          <div class="field">
+            <label for="role">I am a…</label>
+            <select id="role" name="role">
+              <option>Beverage brand</option>
+              <option>Liquor retailer</option>
+              <option>Distributor / partner</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what you're looking to do…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Send Enquiry</button>
+        <p class="form-note">This opens a pre-filled email to our team, and we'll reply within one business day.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/bevads-logo-tight.png" alt="Bev Ads" class="footer-logo" />
+        <p>The beverage-only advertising network — premium in-store media for the brands shoppers reach for.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="for-advertisers.html">For Advertisers</a>
+        <a href="for-retailers.html">For Retailers</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">Book a Demo</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p class="footer-contact">
+          <a href="mailto:info@bevads.com">info@bevads.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Bev Ads. All rights reserved.</span>
+      <span>Beverages Only · The Beverage Advertising Network</span>
+      <span class="footer-version">v1.0.0</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

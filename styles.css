@@ -56,12 +56,7 @@ h1, h2, h3, h4, h5 { font-family: var(--font-head); line-height: 1.14; letter-sp
 .nav a:hover { color: #fff; }
 .nav a.active { color: #fff; font-weight: 600; }
 .nav a.active::after { content: ""; position: absolute; left: 0; right: 0; bottom: -7px; height: 2px; border-radius: 2px; background: var(--orange); }
-.nav-demo, .nav-login { display: none; }
-.header-cta { display: flex; align-items: center; gap: 14px; }
-.btn-login {
-  padding: 12px 24px; border-color: rgba(255,255,255,.45); color: #fff; background: transparent;
-}
-.btn-login:hover { background: rgba(255,255,255,.1); border-color: #fff; transform: translateY(-2px); }
+.nav-demo { display: none; }
 .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer; padding: 6px; }
 .nav-toggle span { width: 24px; height: 2px; background: #fff; border-radius: 2px; }
 
@@ -375,7 +370,7 @@ h1, h2, h3, h4, h5 { font-family: var(--font-head); line-height: 1.14; letter-sp
   .pillars { grid-template-columns: 1fr; }
   .measure-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-  .nav-demo, .nav-login { display: block; }
+  .nav-demo { display: block; }
 }
 @media (max-width: 560px) {
   .section { padding: 60px 0; }

@@ -56,7 +56,12 @@ h1, h2, h3, h4, h5 { font-family: var(--font-head); line-height: 1.14; letter-sp
 .nav a:hover { color: #fff; }
 .nav a.active { color: #fff; font-weight: 600; }
 .nav a.active::after { content: ""; position: absolute; left: 0; right: 0; bottom: -7px; height: 2px; border-radius: 2px; background: var(--orange); }
-.nav-demo { display: none; }
+.nav-demo, .nav-login { display: none; }
+.header-cta { display: flex; align-items: center; gap: 14px; }
+.btn-login {
+  padding: 12px 24px; border-color: rgba(255,255,255,.45); color: #fff; background: transparent;
+}
+.btn-login:hover { background: rgba(255,255,255,.1); border-color: #fff; transform: translateY(-2px); }
 .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: 0; cursor: pointer; padding: 6px; }
 .nav-toggle span { width: 24px; height: 2px; background: #fff; border-radius: 2px; }
 
@@ -262,7 +267,6 @@ h1, h2, h3, h4, h5 { font-family: var(--font-head); line-height: 1.14; letter-sp
 .footer-col a { display: block; color: #8f9cb5; font-size: .93rem; margin-bottom: 10px; transition: .2s; }
 .footer-col a:hover { color: var(--orange-2); }
 .footer-contact { font-size: .93rem; color: #8f9cb5; line-height: 1.9; }
-.footer-contact a { margin-bottom: 4px; }
 .footer-contact a:hover { color: var(--orange-2); }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-top: 22px; font-size: .85rem; color: #6b7893; }
 .footer-version { font-family: var(--font-head); font-weight: 700; font-size: .78rem; color: #8f9cb5; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
@@ -371,7 +375,7 @@ h1, h2, h3, h4, h5 { font-family: var(--font-head); line-height: 1.14; letter-sp
   .pillars { grid-template-columns: 1fr; }
   .measure-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
-  .nav-demo { display: block; }
+  .nav-demo, .nav-login { display: block; }
 }
 @media (max-width: 560px) {
   .section { padding: 60px 0; }
